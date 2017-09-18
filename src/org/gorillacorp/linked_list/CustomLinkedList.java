@@ -79,7 +79,7 @@ public class CustomLinkedList implements I_NodeOperations {
 					// ...else "connect" the previous element to the next, preparing the current
 					// element for deletion...
 					currentElement.previousElement().setNext(currentElement.nextElement());
-					// ... but only if the next node is actually NOT null (that is, the end of the
+					// ... also check if the next node is actually NOT null (that is, the end of the
 					// list)!
 					if (currentElement.nextElement() != null) {
 						// complement to line 81
