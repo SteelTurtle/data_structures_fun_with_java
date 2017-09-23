@@ -30,8 +30,9 @@ public class Node extends ListElement {
 
 	@Override
 	public int compareTo(ListElement otherElement) {
-		if(otherElement != null) {
-			return ((String) super.getData()).compareTo((String) otherElement.getData());
+		if (otherElement != null) {
+			return ((String) super.getData())
+					.compareTo((String) otherElement.getData());
 		} else {
 			return -1;
 		}
